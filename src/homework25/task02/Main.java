@@ -20,7 +20,7 @@ public class Main {
     Pen pen = new Pen();
     pen.inkQuantity = 1000;
     pen.write(scanner.nextLine());
-    pen.refillInk(pen.inkQuantity);
+    pen.refillInk();
     pen.checkInkQuantity();
 
   }

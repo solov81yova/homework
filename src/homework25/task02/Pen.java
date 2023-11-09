@@ -16,8 +16,8 @@ public class Pen {
 
   }
 
-  public void refillInk(int amountInkToAdd) {
-    inkQuantity = amountInkToAdd;
+  public void refillInk() {
+    System.out.println("Количество чернил в ручке снова " + inkQuantity);
 
   }
 
