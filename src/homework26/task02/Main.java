@@ -16,7 +16,8 @@ public class Main {
 
   public static void printDishwasherInfo(Dishwasher dishwasher) {
     System.out.println("Model: " + dishwasher.model);
-    System.out.println("Dimensions: " + dishwasher.dimensions);
+    System.out.println("Width: " + dishwasher.width);
+    System.out.println("Height: " + dishwasher.height);
     System.out.println("Capacity: " + dishwasher.capacity);
     System.out.println("Class energy: " + dishwasher.energyClass);
     System.out.println("Class washing: " + dishwasher.washClass);
@@ -24,9 +25,10 @@ public class Main {
   }
   public static void main(String[] args) {
 
-    Dishwasher dishwasher = new Dishwasher("Miele", "60 * 80", 14,
+    Dishwasher dishwasher = new Dishwasher("Miele", 60, 80, 14,
         'A', 'A', "intensive drying");
     printDishwasherInfo(dishwasher);
+    System.out.println();
     Dishwasher dishwasher1 = new Dishwasher();
     printDishwasherInfo(dishwasher1);
   }
