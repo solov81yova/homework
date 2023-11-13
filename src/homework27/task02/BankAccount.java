@@ -6,8 +6,8 @@ public class BankAccount {
   private final String accountNumber;// текущий номер счета
 
   // конструктор банковского счета
-  public BankAccount(int amountOfMoney, String accountNumber) {
-    this.amountOfMoney = amountOfMoney;
+  public BankAccount(String accountNumber) {
+    this.amountOfMoney = 0;
     this.accountNumber = accountNumber;
   }
 

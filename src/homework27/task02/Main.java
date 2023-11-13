@@ -14,7 +14,7 @@ package homework27.task02;
 public class Main {
 
   public static void main(String[] args) {
-    BankAccount bankAccount = new BankAccount(0, "DE4912345678");
+    BankAccount bankAccount = new BankAccount("DE4912345678");
     System.out.println("On your account: " + bankAccount.getAccountNumber() + " money in amount " +
         bankAccount.getAmountOfMoney());
     bankAccount.withdrawMoney(-50);
