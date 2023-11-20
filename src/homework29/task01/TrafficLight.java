@@ -1,4 +1,5 @@
 package homework29.task01;
+
 /*
 Создать перечисление "цвета светофора" с соответствующими элементами (три цвета).
 Создать класс "Светофор" с полем "текущий цвет светофора" (использовать тип перечисления).
@@ -7,25 +8,31 @@ package homework29.task01;
 переходить дорогу и false в противном случае.
 Продемонстрировать работу класса в Main
  */
+
+import homework29.TrafficLightColor;
+
 public class TrafficLight {
+
   //поле "текущий цвет светофора" класса "Светофор"
-  private String curTrafficLightColor;
+  private TrafficLightColor currentColor;
 
-  //констуктор класса
-  public TrafficLight(String curTrafficLightColor) {
-    this.curTrafficLightColor = curTrafficLightColor;
-  }
   //геттер
-  public  String getCurTrafficLightColor () {
-    return curTrafficLightColor;
+  public TrafficLightColor getCurrentColor() {
+    return currentColor;
   }
+
   //сеттер, что на зеленый цвет светофора можно пересекать дорогу
-  public void setCurTrafficLightColor() {
-    this.curTrafficLightColor = "green";
+  public void setCurTrafficLightColor(TrafficLightColor trafficLightColor) {
+    this.currentColor = TrafficLightColor.GREEN;
 
   }
+
   // метод проверки разрешения пересекать дорогу
-public boolean canCrossTheRoad() {
-    return curTrafficLightColor.equals("green");
+  public boolean canCrossTheRoad() {
+    return currentColor == TrafficLightColor.GREEN;
   }
 }
+
+
+
+
