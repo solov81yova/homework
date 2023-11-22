@@ -29,8 +29,9 @@ public class Main02 {
         System.out.println("The number is: " + number);
         break;
       } else if (dice == 2) {
+
         System.out.println("You throw " + dice + " dices");
-        System.out.println("The number is: " + number + " and " + number);
+        System.out.println("The number is: " + number + " and " + (1 + random.nextInt(6 - 1)));
         break;
     } else {
         System.out.println("I do not have this quantity of dices");
