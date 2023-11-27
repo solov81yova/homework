@@ -13,12 +13,14 @@ n передать как параметр в метод.
 import java.util.Scanner;
 
 public class Main03 {
-// метод для генерации чисел Фибоначчи, где каждое следующее число
+
+  // метод для генерации чисел Фибоначчи, где каждое следующее число
 // равно сумме двух предыдущих чисел
-  public static void fibonacciNumbers(int n, int[] arr) {
+  public static int fibonacciNumbers(int n, int[] arr) {
     for (int i = 2; i < arr.length; i++) {//начинаю со второго индекса,т.к.первые два числа известны
       arr[i] = arr[i - 1] + arr[i - 2];
     }
+    return n;
   }
 //метод вывода на печать полученного массива чисел
   public static void printFibonacciNumbers(int[] arr) {
