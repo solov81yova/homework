@@ -28,20 +28,20 @@ public class Main {
   public static String identifyTypePlanet(PlanetOfTheSolarSystem planet) {
     switch (planet) {
       case EARTH:
-        return "обитаемая планета";
+        return "Terrestrial";
       case MERCURY:
       case VENUS:
       case MARS:
-        return "безжизненный камень";
+        return "Lifeless stone";
       case JUPITER:
       case SATURN:
-        return "газовый гигант";
+        return "Gas giant";
       case URANUS:
       case NEPTUNE:
-        return "ледяная планета";
+        return "Ice planet";
       default:
-        return "This number is absent. Try again!";
     }
+    return "This number is absent. Check your input!";
   }
 
   public static void main(String[] args) {
@@ -50,13 +50,16 @@ public class Main {
     int digit = scanner.nextInt();
     if (digit >= 1 && digit <= 8) {
       PlanetOfTheSolarSystem[] planets = PlanetOfTheSolarSystem.values();
-      PlanetOfTheSolarSystem choice = planets[digit];
+      PlanetOfTheSolarSystem choice = planets[digit - 1];
       System.out.println("You choose the planet: " + choice.getName());
-      System.out.println("The class is: " + identifyTypePlanet(planets));
-
+      System.out.println("The class is: " + identifyTypePlanet(choice));
     }
-
+    if (digit < 1 || digit > 8) {
+      System.out.println("This number is absent. Check your input!");
+    }
   }
 }
+
+
 
 
