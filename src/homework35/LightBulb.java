@@ -43,11 +43,11 @@ public class LightBulb {
   public void setPrice(double price) {
     this.price = price;
   }
-}
+
 // это поле не задавалось изначально , потому и геттер не нужен
-  /*
   public int getPower() {
     return power;
   }
-*/
+}
+
 
