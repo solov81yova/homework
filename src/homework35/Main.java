@@ -15,19 +15,20 @@ public class Main {
   *********************************************************************************
   Техническое задание:
   Создать класс Лампочка.
-  Задать следующие поля: "штрих-код", "производитель", "яркость","цвет лампочки","цена".
+  Задать следующие поля: "штрих-код", "производитель", "яркость","мощность","цвет лампочки","цена".
   Создать конструктор.
-  Для полей "цена" и "штрих-код" создать методы доступа (аксессоры) в классе Main.
+  Для полей "цена" и "штрих-код" создать методы доступа (аксессоры).
   Для остальных полей класса Лампочка задать аксессор получения значения поля.
-  Продемонстрировать работу использования обьекта класса в Main.
+  Продемонстрировать работу вызова обьекта класса в Main с помощью конструктора.
    */
 
   public static void main(String[] args) {
-    LightBulb led = new LightBulb(456789, "Ukraine", 10,
+    LightBulb led = new LightBulb(456789, "Ukraine", 10, 5,
         "coldweit", 50);
     System.out.println("Barcode is: " + led.getBarcode());
     System.out.println("Manufacturer is: " + led.getManufacturer());
     System.out.println("Brightness is: " + led.getBrightness() + " Bт");
+    System.out.println("Power is: " + led.getPower());
     System.out.println("Color is: " + led.getRgb());
     System.out.println("Price is: " + led.getPrice() + " UAH");
   }
