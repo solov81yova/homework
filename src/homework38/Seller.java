@@ -1,19 +1,12 @@
 package homework38;
 
-<<<<<<< HEAD
 public class Seller extends Person {
-=======
-public class Seller extends Product {
-
-  private Product[] products;
->>>>>>> 032f19587351f600b0b42d426faff6c4e8e0b4e4
 
   private Product[] products;
 
   public Seller(String name) {
     super(name);
     products = new Product[10];
-<<<<<<< HEAD
     products[0] = new Product("Eggs", 24, 0.4);
     products[1] = new Product("Salt", 10, 1.0);
     products[2] = new Product("Sugar", 50, 2.0);
@@ -43,29 +36,12 @@ public class Seller extends Product {
           return amount * products[i].getPrice();
         }
         break;
-=======
-  }
-
-  public void greeting() {
-    System.out.println("Good day! What would you like to buy?");
-  }
-
-  public double sayPrice(String name, int quantity) {
-    for (int i = 0; i < products.length; i++) {
-      if (this.products == products && this.getQuantity() >= quantity) {
-        return getPrice();
-      }
-      }
-        return -1;
->>>>>>> 032f19587351f600b0b42d426faff6c4e8e0b4e4
       }
     }
     System.out.println("Seller: Sorry, we dont have that");
-    return -1;
+    return  -1;
   }
 
-
-<<<<<<< HEAD
   public void sell(String name, int amount) {
     for (int i = 0; i < products.length; i++) {
       if (products[i].getName().equals(name)) {
@@ -76,5 +52,3 @@ public class Seller extends Product {
     }
   }
 }
-=======
->>>>>>> 032f19587351f600b0b42d426faff6c4e8e0b4e4
