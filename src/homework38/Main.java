@@ -1,14 +1,15 @@
 package homework38;
 
+import java.util.Scanner;
+
 public class Main {
 
   public static void main(String[] args) {
-    Person person = new Person("Victoriia");
-    person.introduce(person);
-    Seller seller = new Seller();
-    seller.greeting();
-    String[] products = {"Cheese", "Rice", "Tee", "Coffee", "Butter", "Milk", "Potato", "Apples",
-        "Sausage", "Meat"};
+    Seller seller = new Seller("John");
+    Customer customer = new Customer("Daniel", 100);
+    Scanner scanner = new Scanner(System.in);
+    String name = scanner.nextLine();
+    int amount = scanner.nextInt();
+    customer.buyProduct(seller, name, amount);
   }
-
 }
