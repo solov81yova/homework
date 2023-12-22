@@ -31,36 +31,36 @@ public class Main {
       System.out.println("Enter length and width:");
       double length = scanner.nextDouble();
       double width = scanner.nextDouble();
-      Shape shape1 = new Rectangle(length, width);
-      System.out.println(shape1);
-      System.out.println("Perimeter is: " + shape1.getPerimeter() + " m");
+      Shape shape = new Rectangle(length, width);
+      System.out.println(shape);
+      System.out.println("Perimeter is: " + shape.getPerimeter() + " m");
       System.out.println("Enter the price per meter:");
       double price = scanner.nextDouble();
-      double totalPrice = shape1.getPerimeter() * price;
+      double totalPrice = shape.getPerimeter() * price;
       System.out.println("The total price is: " + totalPrice + " euro.");
       System.out.println("Enter the increase coefficient:");
       double coefficient = scanner.nextDouble();
-      shape1.resize(coefficient);
-      System.out.println(shape1);
-      System.out.println(shape1.getPerimeter());
+      shape.resize(coefficient);
+      System.out.println(shape);
+      System.out.println(shape.getPerimeter());
       System.out.println("The total price with coefficient: " + totalPrice * coefficient + " euro");
 
     } else if (choice == 2) {
       System.out.println("You choose shape: Circle");
       System.out.println("Enter the radius length:");
       double radius = scanner.nextDouble();
-      Shape shape2 = new Circle(radius);
-      System.out.println(shape2);
-      System.out.println("Perimeter is: " + shape2.getPerimeter() + " m");
+      Shape shape = new Circle(radius);
+      System.out.println(shape);
+      System.out.println("Perimeter is: " + shape.getPerimeter() + " m");
       System.out.println("Enter the price per meter:");
       double price = scanner.nextDouble();
-      double totalPrice = shape2.getPerimeter() * price;
+      double totalPrice = shape.getPerimeter() * price;
       System.out.println("The total price is: " + totalPrice + " euro.");
       System.out.println("Enter the increase coefficient:");
       double coefficient = scanner.nextDouble();
-      shape2.resize(coefficient);
-      System.out.println(shape2);
-      System.out.println(shape2.getPerimeter());
+      shape.resize(coefficient);
+      System.out.println(shape);
+      System.out.println(shape.getPerimeter());
       System.out.println("The total price with coefficient: " + totalPrice * coefficient + " euro");
 
     } else if (choice == 3) {
@@ -68,20 +68,20 @@ public class Main {
       System.out.println("Enter number of sides and length: ");
       int numberOfSides = scanner.nextInt();
       double length = scanner.nextDouble();
-      Shape shape3 = new RegularPolygon(numberOfSides, length);
-      System.out.println(shape3);
-      System.out.println("Perimeter is: " + shape3.getPerimeter() + " m");
+      Shape shape = new RegularPolygon(numberOfSides, length);
+      System.out.println(shape);
+      System.out.println("Perimeter is: " + shape.getPerimeter() + " m");
       System.out.println("Enter the price per meter:");
       double price = scanner.nextDouble();
-      double totalPrice = shape3.getPerimeter() * price;
+      double totalPrice = shape.getPerimeter() * price;
       System.out.println("The total price is: " + totalPrice + " euro.");
       System.out.println("Enter the increase coefficient:");
       double coefficient = scanner.nextDouble();
-      shape3.resize(coefficient);
-      System.out.println(shape3);
-      System.out.println(shape3.getPerimeter());
+      shape.resize(coefficient);
+      System.out.println(shape);
+      System.out.println(shape.getPerimeter());
       System.out.println(
-          "The total price with coefficient: " + shape3.getPerimeter() * coefficient + " euro");
+          "The total price with coefficient: " + shape.getPerimeter() * coefficient + " euro");
     } else {
       System.out.println("This shape is absent");
     }
