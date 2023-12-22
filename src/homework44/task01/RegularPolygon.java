@@ -6,11 +6,9 @@ public class RegularPolygon extends Shape {
   protected double length;
 
   public RegularPolygon(int numberOfSides, double length) {
-    super("RegularPolygon");
     this.numberOfSides = numberOfSides;
     this.length = length;
   }
-
   @Override
   public double getPerimeter() {
     return numberOfSides * length;

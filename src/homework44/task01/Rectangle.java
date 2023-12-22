@@ -6,7 +6,6 @@ public class Rectangle extends Shape {
   protected double width;
 
   public Rectangle(double length, double width) {
-    super("Rectangle");
     this.length = length;
     this.width = width;
   }
