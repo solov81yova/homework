@@ -39,8 +39,10 @@ public class MyArray<E> implements Iterable<E> {
 
   // метод для изменения значения элемента по индексу
   public void set(int index, E value) {
+    if (index < 0 || index >= array.length) {
+      throw new IndexOutOfBoundsException("Index " + index + " is out of bounds " + array.length);
+    }
     array[index] = value;
-    throw new IndexOutOfBoundsException("Index " + index + " is out of bounds " + array.length);
   }
 
   // метод, который возвращает размер массива
@@ -56,7 +58,7 @@ public class MyArray<E> implements Iterable<E> {
         return i;
       }
     }
-    throw new RuntimeException("There is no element index for this value");
+    return -1;
   }
 
   public void add(int index, E val) {

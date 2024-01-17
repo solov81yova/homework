@@ -18,11 +18,6 @@ public class Main {
       System.out.println(ex.getMessage());
     }
     try {
-      myArray.indexOf(2);
-    } catch (RuntimeException ex) {
-      System.out.println(ex.getMessage());
-    }
-    try {
       myArray.add(3, 7);
     } catch (IndexOutOfBoundsException ex) {
       System.out.println(ex.getMessage());
