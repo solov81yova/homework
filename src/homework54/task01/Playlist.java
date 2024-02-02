@@ -36,15 +36,15 @@ public class Playlist {
     return new LinkedList<>(songs);
   }
 
-  public String getReverseListeningQueue() {
+  public  Queue<String> getReverseListeningQueue() {
     List<Song> reversedSongs = new ArrayList<>();
     Collections.reverse(reversedSongs);
-    return reversedSongs.toString();
+    return new LinkedList<>();
   }
 
-  public String getShuffledListeningQueue() {
+  public Queue<String> getShuffledListeningQueue() {
     List<Song> shuffledSongs = new ArrayList<>();
     Collections.shuffle(shuffledSongs);
-    return shuffledSongs.toString();
+    return new LinkedList<>();
   }
 }

@@ -38,9 +38,9 @@ private int duration;
   @Override
   public String toString() {
     return "Song{" +
-        "<name='" + name + ">" + '\'' +
-        "- <title='" + title + ">"  + '\'' +
-        "(<duration= " + (duration / 60) + " m " + (duration % 60) + " s" + ">)" +
+        "name='" + name  + '\'' +
+        " - title='" + title  + '\'' +
+        " duration= " + "(" + (duration / 60) + ":" + (duration % 60) +")" +
         '}';
   }
 }
